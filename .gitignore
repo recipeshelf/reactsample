@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/reactsample/bin/Debug/netcoreapp2.0
+/reactsample/node_modules
+/reactsample/obj
