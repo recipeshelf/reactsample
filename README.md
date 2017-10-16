@@ -6,5 +6,8 @@ This should run automatically when you open the solution, if it doesn't run it f
 ## Run the visual studio ReactSample project for web api
 Should run at http://localhost:50949
 
+## Run tests
+'npm test' in reactsample folder
+
 ## Run react server
 'npm start' in reactsample folder
