@@ -6,3 +6,4 @@
 /reactsample/bin/Debug/netcoreapp2.0
 /reactsample/node_modules
 /reactsample/obj
+/reactsample/src/__snapshots__/App.test.js.snap

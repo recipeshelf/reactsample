@@ -7,9 +7,16 @@
   "author": "Sri Prasad Tadimalla",
   "license": "ISC",
   "devDependencies": {
+    "axios-mock-adapter": "^1.9.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme-wait": "^1.0.9",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0"
+    "grunt-sass": "^2.0.0",
+    "jest-enzyme": "^4.0.1",
+    "jsdom": "^11.3.0",
+    "react-test-renderer": "^16.0.0"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -20,6 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:50949/"

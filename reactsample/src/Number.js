@@ -32,9 +32,9 @@ class Number extends Component {
     render() {
         return (
             <div>
-                <button className="App-button" onClick={this.decrement}>Minus</button>
-                <span>{this.state.currentNumber}</span>
-                <button className="App-button" onClick={this.increment}>Plus</button>
+                <button className="App-button" id="decrementButton" onClick={this.decrement}>Minus</button>
+                <span id="currentNumberSpan">{this.state.currentNumber}</span>
+                <button className="App-button" id="incrementButton" onClick={this.increment}>Plus</button>
             </div>
         );
     }
