@@ -3,7 +3,7 @@ import App from './App';
 import Number from './Number';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { shallow, mount, render } from 'enzyme';
+import { mount } from 'enzyme';
 import { createWaitForElement } from 'enzyme-wait';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
