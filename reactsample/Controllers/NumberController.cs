@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace ReactSample.Controllers
 {
@@ -11,15 +12,13 @@ namespace ReactSample.Controllers
         [HttpGet]
         public JsonResult Get()
         {
-            byte[] currentNumber = null;
-            HttpContext.Session.TryGetValue(CurrentNumberKey, out currentNumber);
-            return Json(currentNumber != null ? BitConverter.ToInt32(currentNumber, 0) : (int?)null);
+            return Json(HttpContext.Session.GetInt32(CurrentNumberKey));
         }
 
         [HttpPut("{currentNumber}")]
         public void Put(int currentNumber)
         {
-            HttpContext.Session.Set(CurrentNumberKey, BitConverter.GetBytes(currentNumber));
+            HttpContext.Session.SetInt32(CurrentNumberKey, currentNumber);
         }
     }
 }
